@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../../store/AuthContext.jsx';
 import { useNavigate } from 'react-router-dom';
 import { API_URL } from '../../utils/constants'
+import gicon from '../../assets/images/gicon.svg'
 
 
 function Login() {
@@ -37,7 +38,7 @@ function Login() {
             <div className={styles.loginForm}>
                 <h1 style={{ textAlign: 'center' }}>Login</h1>
                 <div className={styles.Google}>
-                    <img src="/google.svg" alt="Google Login" />
+                    <img src={gicon} alt="Google Login" />
                     <p>Login with Google</p>
                 </div>
                 <hr />

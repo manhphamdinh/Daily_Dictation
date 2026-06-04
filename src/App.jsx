@@ -12,6 +12,8 @@ import ChangeUsername from "./pages/ChangeUsername"
 import TopUser from "./pages/TopUser"
 import FavouriteLessons from "./pages/FavouriteLessons"
 import ChangePassword from "./pages/ChangePassword"
+import DailyDictationChat from './components/DailyDictationChat'
+
 import { API_URL } from './utils/constants'
 
 
@@ -47,6 +49,8 @@ function App() {
   return (
     <>
       <Router basename="/embed/daily-dictation">
+            {/* <Router basename="/"> */}
+
         <div>
           <Routes>
             <Route path='/' element={<DefaultLayout><Home /></DefaultLayout>} />
@@ -67,6 +71,8 @@ function App() {
           </Routes>
         </div>
       </Router>
+
+      <DailyDictationChat />
     </>
   )
 }

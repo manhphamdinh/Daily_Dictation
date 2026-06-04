@@ -1,0 +1,11 @@
+{
+  "id": "daily-dictation",
+  "alias": "daily-dictation",
+  "name": "Daily Dictation",
+  "description": "Luyện nghe tiếng Anh qua bài dictation IELTS",
+  "version": "1.0.0",
+  "type": "embedded",
+  "hasBackend": false,
+  "hasFrontendOnly": true,
+  "icon": "Brain"
+}

@@ -2,7 +2,7 @@ import styles from './Register.module.scss';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { API_URL } from '../../utils/constants'
-
+import gicon from '../../assets/images/gicon.svg'
 
 function Register() {
 
@@ -43,7 +43,7 @@ function Register() {
             <div className={styles.loginForm}>
                 <h1 style={{ textAlign: 'center' }}>Create an account</h1>
                 <div className={styles.Google}>
-                    <img src="/google.svg" alt="Google Register" />
+                    <img src={gicon} alt="Google Register" />
                     <p>Register with Google</p>
                 </div>
                 <hr />
