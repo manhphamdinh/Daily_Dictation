@@ -1,0 +1,66 @@
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.progress {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.disable {
+    color: var(--lighter-lighter-text-color)
+}
+
+.progressContainer {
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  background-color: #f0f0f0;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+.currentSentenceNum {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.separator {
+  color: #6b7280;
+}
+
+.jump {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.jumpInput {
+  width: 60px;
+  text-align: left;
+  font-size: var(--primary-font-size);
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 6px;
+  outline: none;
+  display: inline-block;
+
+  &:focus {
+    border-color: var(--primary);
+  }
+}
+

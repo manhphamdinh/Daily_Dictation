@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+:root {
+    --primary: #0d6efd;
+    --hover-primary-color: #095ad5;
+    --light-primary-color: #cfe2ff;
+    --primary-text-color: #212529;
+    --lighter-text-color: #575757;
+    --lighter-lighter-text-color: #888888;
+    --green-color: rgb(25 135 84);
+    --hover-green-color: #137949;
+    --teal-color: #20c997;
+    --yellow-color: #ffc107;
+    --red-color: #dc3545;
+
+    // --primary-font-size: 2.3rem;
+    // --small-font-size: 2.0rem;
+    // --smaller-font-size: 1.8rem;
+    // --subtitle-font-size: 3.4rem;
+    // --primary-title-font-size: 4rem;
+    // --bigtitle-font-size: 5rem;
+
+    --primary-font-size: 1.6rem;
+    --small-font-size: 1.5rem;
+    --smaller-font-size: 1.4rem;
+    --subtitle-font-size: 2.4rem;
+    --primary-title-font-size: 2.9rem;
+    --bigtitle-font-size: 3.7rem;
+    
+
+}
+
+html {
+    font-size: 62.5%;
+} 
+
+body {
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: var(--primary-font-size);
+    line-height: 1.6;
+    color: var(--primary-text-color);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

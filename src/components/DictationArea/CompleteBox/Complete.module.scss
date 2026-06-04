@@ -1,0 +1,54 @@
+.completeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+    background-color: var(--light-gray);
+    border-radius: 6px;
+}
+
+.title {
+    width: 55%;
+    text-align: center;
+    font-size: var(--bigtitle-font-size);
+    color: var(--primary-text-color);
+}
+
+.icon {
+    font-size: 7.5rem;
+    color: var(--green-color);
+}
+
+.review {
+    background-color: transparent;
+    margin-top: 15px;
+    margin-left: 18px;
+    padding: 9px 13px;
+    font-size: var(--primary-font-size);
+    border: 1px solid var(--lighter-text-color);
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--lighter-text-color);
+    &:hover {
+        background-color: var(--lighter-text-color);
+        color: white;
+        transition: background-color 0.2s ease;
+    }}
+
+.next {
+    margin-top: 15px;
+    padding: 9px 12px;
+    font-size: var(--primary-font-size);
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    &:hover {
+        background-color: var(--hover-primary-color);
+        transition: background-color 0.2s ease;
+    }
+}

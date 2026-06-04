@@ -1,0 +1,17 @@
+.translationBox {
+    width: 100%;
+    border-radius: 8px;
+    padding: 9px 10px;
+    border: 1px solid #ddd;
+    font-size: var(--subtitle-font-size);
+    min-height: 120px;
+    outline: none;
+    font-family: inherit;
+    resize: none;
+}
+
+.title {
+    font-size: var(--primary-font-size);
+    color: var(--lighter-text-color);
+    margin-bottom: 7.5px;
+}

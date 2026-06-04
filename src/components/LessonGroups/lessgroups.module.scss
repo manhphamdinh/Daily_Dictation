@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.card {
+  border: 1px solid #e6e6e6;
+  border-radius: 7.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0px;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 7.5px 12px;
+  
+    .icon {
+        margin-left: auto;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.title {
+    font-size: var(--subtitle-font-size);
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.active {
+    background-color: var(--light-primary-color);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.expanded {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+    padding: 7.5px 0px;
+     > div {
+        margin: 7.5px;
+        border: 1px solid #e6e6e6;
+        border-radius: 7.5px;
+     }
+}

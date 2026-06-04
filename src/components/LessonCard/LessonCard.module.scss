@@ -1,0 +1,97 @@
+.outer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.container {
+    display: flex;
+    padding: 6px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconContainer {
+    display: flex;
+    margin: 0 6px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon {
+    color: var(--lighter-text-color);
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin-left: 7.5px;
+}
+
+.title {
+    font-size: var(--primary-font-size);
+    font-weight: bold;
+    color: var(--primary);
+    &:hover {
+        color: var(--hover-primary-color);
+        cursor: pointer;
+    }
+}
+
+.subtitle {
+    font-size: var(--small-font-size);
+    color: var(--lighter-text-color);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    font-size: var(--smaller-font-size);
+    color: var(--lighter-text-color);
+}
+
+.circle {
+    width: 3px;
+    margin: 0px 7px;
+}
+
+.diamond {
+    width: var(--subtitle-font-size);
+    margin-right: 6px;
+}
+
+.progress {
+    margin-left:  12px;
+    margin-right: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  background-color: #eee; /* xám nhạt */
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--green-color); /* xanh lá */
+  transition: width 0.3s ease;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.complete {
+    color: var(--primary)
+}

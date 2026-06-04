@@ -1,0 +1,120 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 7.5px;
+    margin:  23px 0px 34px 0px;
+    font-size: var(--primary-font-size);
+}
+
+.breadcrumbLink {
+    color: var(--primary);
+    text-decoration: underline;
+    transition: color 0.2s;
+
+    &:hover {
+        color: var(--hover-primary-color);
+        text-decoration: underline;
+    }
+}
+
+.separator {
+    color: var(--lighter-text-color);
+}
+
+.current {
+    color: var(--lighter-text-color);
+}
+
+.bigTitle {
+    font-size: var(--subtitle-font-size);
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+.dictationPage {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+
+
+    > div {
+        display: flex;
+        gap: 15px;
+        align-items: end;
+    }
+}
+
+.level {
+    font-size: var(--small-font-size);
+    color: var(--lighter-text-color);
+    padding-bottom: 5px;
+}
+
+.subtitle {
+    font-size: var(--primary-font-size);
+    color: var(--lighter-text-color);
+}
+
+.ellipsisIcon {
+    font-size: var(--primary-font-size);
+    color: var(--lighter-text-color);
+    cursor: pointer;
+    padding-bottom: 12px;
+    &:hover {
+        color: var(--lighter-lighter-text-color);
+    }
+}
+
+.starIcon {
+    font-size: var(--subtitle-font-size);
+    cursor: pointer;
+    padding-bottom: 12px;
+}
+
+.complete {
+    color: var(--primary);
+}
+
+.menu {
+    z-index: 1000;
+    position: absolute;
+    right: 49%;
+    top: 35%;
+
+    margin-top: 6px;
+    white-space: nowrap;
+
+    background: white;
+    border-radius: 7.5px;
+    border: 1px solid #ddd;
+    color: var(--lighter-text-color);
+
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 6px 0;
+    }
+
+    li {
+        padding: 7.5px 12px;
+        cursor: pointer;
+        transition: background 0.1s;
+        display: flex;
+        align-items: center;
+
+        > .resetIcon {
+            margin-right: 6px;
+        }
+    }
+
+    li:hover {
+        color: var(--primary-text-color);
+    }
+}

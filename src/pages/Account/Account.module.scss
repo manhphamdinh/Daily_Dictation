@@ -1,0 +1,58 @@
+/* Account.module.scss */
+
+.container {
+  padding: 30px;
+
+  > h1 {
+    margin-bottom: 23px;
+}
+}
+
+
+
+.table {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  border-bottom: 1px solid #eee;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.label {
+  padding: 12px;
+  font-weight: bold;
+  border-right: 1px solid #ddd;
+}
+
+.value {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.link {
+  color: var(--primary);
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:hover {
+    color: var(--hover-primary-color);
+  }
+}
+
+.badge {
+  background: var(--green-color);
+  color: white;
+  padding: 3px 7.5px;
+  border-radius: 5px;
+  font-size: 10px;
+}

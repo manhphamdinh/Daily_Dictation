@@ -1,0 +1,58 @@
+.container {
+  padding: 30px;
+
+  > h1 {
+    margin-bottom: 23px;
+}
+}
+
+.lessonCard {
+    padding: 12px;
+    display: flex;
+    border-radius: 7.5px;
+    border: 1px solid #ddd;
+    align-items: center;
+}
+
+.icon {
+  margin-right: 6px;
+}
+
+.complete {
+  color: var(--primary);
+}
+
+.title {
+  flex: 1;
+  color: var(--primary);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button {
+  font-size: var(--small-font-size);
+  color: var(--lighter-text-color);
+  cursor: pointer;
+  text-decoration: underline;
+
+  :hover {
+    color: var(--primary-text-color);
+  }
+}
+
+.container {
+  padding: 15px;
+}
+
+.lessonList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // 👉 2 cột
+  gap: 12px;
+}
+
+// 👉 responsive: màn nhỏ thì thành 1 cột
+@media (max-width: 1000px) {
+  .lessonList {
+    grid-template-columns: 1fr;
+  }
+}

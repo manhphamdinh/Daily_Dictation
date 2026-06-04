@@ -1,0 +1,74 @@
+.wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.container {
+    cursor: pointer;
+}
+
+.menu {
+    z-index: 1000;
+    position: absolute;
+    top: 125%;
+    right: 0;
+
+    margin-top: 6px;
+    white-space: nowrap;
+
+    background: white;
+    border-radius: 7.5px;
+    border: 1px solid #ddd;
+    color: var(--lighter-text-color);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    li {
+        padding: 7.5px 12px;
+        cursor: pointer;
+        margin-right: 15px;
+        transition: background 0.1s;
+    }
+
+    li:hover {
+        color: var(--primary-text-color);
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7.5px;
+}
+
+.title {
+    color: var(--primary);
+    cursor: pointer;
+    flex: 1;
+}
+
+.progress {
+    
+    display: flex;
+    align-items: center;
+}
+
+.progressBar {
+  width: 300px;
+  height: 6px;
+  background-color: #eee; /* xám nhạt */
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--green-color); /* xanh lá */
+  transition: width 0.3s ease;
+}

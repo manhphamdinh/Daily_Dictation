@@ -1,0 +1,33 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 7.5px;
+    margin:  22px 0px;
+    font-size: var(--primary-font-size);
+}
+
+.breadcrumbLink {
+    color: var(--primary);
+    text-decoration: underline;
+    transition: color 0.2s;
+
+    &:hover {
+        color: var(--hover-primary-color);
+        text-decoration: underline;
+    }
+}
+
+.separator {
+    color: var(--lighter-text-color);
+}
+
+.current {
+    color: var(--lighter-text-color);
+}
+
+.bigTitle {
+    font-size: var(--bigtitle-font-size);
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}

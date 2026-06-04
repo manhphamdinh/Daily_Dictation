@@ -1,0 +1,59 @@
+audio {
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+}
+
+.audioPlayer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.speedController {
+    margin-left: 7.5px;
+    padding: 6px 9px;
+    font-size: var(--small-font-size);
+    border: 1px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--lighter-text-color);
+    background-color: transparent;
+    &:hover {
+        border: 1px solid var(--lighter-text-color);
+
+    }
+}
+.menu {
+    z-index: 1000;
+    position: absolute;
+    top: 20%;
+    right: 55%;
+    text-align: left;
+    margin-top: 6px;
+    width: fit-content;
+
+    background: white;
+    border-radius: 7.5px;
+    border: 1px solid #ddd;
+    color: var(--lighter-text-color);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    li {
+        padding: 7.5px 12px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    li:hover {
+        color: var(--primary-text-color);
+    }
+}

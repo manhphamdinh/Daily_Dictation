@@ -1,0 +1,85 @@
+.footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+    padding: 30px 15px;
+    margin-top: 45px;
+    width: 100%;
+    font-size: var(--small-font-size);
+}
+
+.footerContent {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.appStoreSection {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.appStoreBadge {
+    height: 38px;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.linksContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 24px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+
+    a {
+        color: var(--primary);
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+            color: var(--hover-primary-color);
+            text-decoration: underline;
+        }
+
+        .icon {
+            margin-right: 6px;
+            font-weight: bold;
+        }
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 15px;
+        margin-top: 30px;
+    }
+
+    .linksContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .appStoreBadge {
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .linksContainer {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .appStoreSection {
+        flex-direction: column;
+    }
+}

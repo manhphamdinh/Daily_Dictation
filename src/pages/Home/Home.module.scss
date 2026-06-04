@@ -1,0 +1,108 @@
+.container1 {
+    margin-top: 30px;
+    margin-bottom: 38px;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+}
+
+.title {
+    font-size: var(--primary-title-font-size);
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.bigTitle {
+    font-size: var(--bigtitle-font-size);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.intro {
+    >button {
+        margin-top: 15px;
+        padding: 15px 23px;
+        font-size: var(--primary-font-size);
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--hover-primary-color);
+            transition: background-color 0.2s ease;
+        }
+    }
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+    margin-bottom: 22px;
+    margin-top: 30px;
+
+}
+
+.container2> :first-child {
+    align-self: center;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.stepholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+
+    >img {
+        width: 30%;
+    }
+
+    p {
+        margin-top: 7.5px;
+        text-align: center;
+    }
+}
+
+.questionHolder {
+    margin-bottom: 38px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    align-items: stretch;
+    margin-top: 30px;
+
+}
+
+.container3> :first-child {
+    align-self: center;
+    text-align: center;
+}
+
+.container3 .row {
+    display: flex;
+    gap: 75px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container3 .row>div {
+    text-align: left;
+    flex: 1 1 0;
+}

@@ -1,0 +1,291 @@
+.mainContent {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    gap: 12px;
+}
+
+.inputBox {
+    width: 100%;
+    border-radius: 6px;
+    padding: 9px 10px;
+    border: 1px solid #ddd;
+    font-size: var(--subtitle-font-size);
+    min-height: 150px;
+    transition: border-color 0.2s ease;
+    outline: none;
+    font-family: inherit;
+    resize: none;
+    margin-top: 15px;
+}
+
+.inputBox:focus {
+    border-color: var(--primary);
+}
+
+.inputBox::placeholder {
+    color: var(--lighter-lighter-text-color);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+ 
+.feedbackAndButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &:nth-child(2) {
+        align-self: right;
+    }
+}
+
+
+.checkButton {
+    margin-top: 15px;
+    padding: 9px 13px;
+    font-size: var(--primary-font-size);
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+        border: 1px solid var(--primary);
+
+    &:hover {
+        background-color: var(--hover-primary-color);
+        transition: background-color 0.2s ease;
+    }
+}
+
+.skipButton {
+    margin-top: 15px;
+    margin-left: 18px;
+    padding: 9px 13px;
+    font-size: var(--primary-font-size);
+    border: 1px solid var(--lighter-text-color);
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--lighter-text-color);
+    background-color: transparent;
+    &:hover {
+        background-color: var(--lighter-text-color);
+        color: white;
+        transition: background-color 0.2s ease;
+    }
+}
+
+.nextButton {
+    margin-top: 15px;
+    margin-left: 18px;
+    padding: 9px 13px;
+    font-size: var(--primary-font-size);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--green-color);
+    &:hover {
+        background-color: var(--hover-green-color);
+        transition: background-color 0.2s ease;
+    }
+}
+
+
+.inputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.inputBoxHighlighted {
+    width: 100%;
+    min-height: 150px;
+    padding: 9px 10px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: #fff;
+    outline: none;
+    font-family: inherit;
+    resize: none;
+    position: absolute;
+    pointer-events: none; // Cho phép click qua layer này
+    z-index: 1;
+    font-size: var(--subtitle-font-size);
+    line-height: normal;
+    margin-top: 15px;    
+}
+
+.wrongWordYellow {
+    border-bottom: 5px solid var(--yellow-color);
+}
+
+.wrongCharRed {
+    border-bottom: 5px solid var(--red-color);
+}
+
+.answerSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    padding: 9px;
+    gap: 18px;
+}
+
+.boldWord {
+    font-size: var(--subtitle-font-size);
+    color: var(--green-color);
+    font-weight: bold;
+}
+
+.normalWord {
+    font-size: var(--subtitle-font-size);
+}
+.maskedWord {
+    font-size: var(--subtitle-font-size);
+}
+
+.icon {
+    display: inline;
+    > * {
+        margin-right: 4px;
+    }
+}
+
+.feedbackWrong {
+    color: var(--lighter-text-color);
+    font-size: var(--subtitle-font-size);
+
+    >.icon {
+        color: var(--yellow-color);
+    }
+}
+
+.feedbackCorrect {
+    color: var(--green-color);
+    font-weight: bold;
+    font-size: var(--subtitle-font-size);
+
+    >.icon {
+        color: var(--green-color);
+    }
+}
+
+.inputBoxError {
+    border-color: var(--red-color);
+}
+
+.inputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.inputBox {
+    width: 100%;
+    min-height: 150px;
+    font-family: inherit;
+    
+    &:focus {
+        outline: none;
+        border-color: var(--primary);
+    }
+}
+
+.inputBoxError {
+    border-color: var(--red-color);
+}
+
+.inputBoxTransparent {
+    position: relative;
+    background: transparent;
+    color: transparent;
+    caret-color: black; // Hiển thị con trỏ
+    z-index: 2;
+    
+    &::placeholder {
+        color: transparent;
+    }
+}
+
+.correctWordInline {
+    color: #212529;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.setting {
+    display: flex;
+    flex-direction: row;
+    gap: 7.5px;
+    align-items: center;
+    justify-content: end;
+    flex: 1;
+    margin-right: 4px;
+}
+
+.progress {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.disable {
+    color: var(--lighter-lighter-text-color)
+}
+
+/* Dictation.module.scss */
+
+// Progress clickable
+.progressContainer {
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  background-color: #f0f0f0;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+.currentSentenceNum {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.separator {
+  color: #6b7280;
+}
+
+.jump {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.jumpInput {
+  width: 60px;
+  text-align: left;
+  font-size: var(--primary-font-size);
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 6px;
+  outline: none;
+  display: inline-block;
+
+  &:focus {
+    border-color: var(--primary);
+  }
+}

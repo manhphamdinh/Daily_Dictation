@@ -1,0 +1,7 @@
+{
+  "name": "Daily Dictation",
+  "description": "Luyện nghe tiếng Anh qua bài dictation",
+  "version": "1.0.0",
+  "capabilities": ["dictation", "dictionary", "progress-tracking"],
+  "status": "active"
+}

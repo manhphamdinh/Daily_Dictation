@@ -1,0 +1,61 @@
+.outer {
+    display: flex;
+}
+
+.topUserWrapper {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    width: fit-content;
+    margin: 45px 20px;
+    padding: 23px 15px;
+    flex: 1;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .userList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .userItem {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-top: 1px solid #ddd;
+
+        .rank {
+            margin-right: 30px;
+            min-width: 23px;
+        }
+
+        .avatar {
+            border-radius: 3px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 7.5px;
+        }
+
+        .usernameHeader {
+            flex: 1;
+        }
+
+        .username {
+            flex: 1;
+            color: var(--primary);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.bigTitle {
+    font-size: var(--bigtitle-font-size);
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.topicsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 38px;
+}

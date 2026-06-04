@@ -1,0 +1,112 @@
+.loginWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm {
+    
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    width: fit-content;
+    margin-top: 45px;
+    padding: 23px 15px;
+    min-width: 630px;
+}
+
+.Google {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 18px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px;
+
+    > img {
+        width: 23px;
+        margin-right: 7.5px;
+    }
+    &:hover {
+        background-color: var(--light-primary-color);
+        cursor: pointer;
+        border: 1px solid var(--primary);
+    }
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: var(--primary-font-size);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: var(--primary-font-size);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 12px 10px;
+  font-size: var(--primary-font-size);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.loginButton {
+    margin-top: 15px;
+    padding: 9px 13px;
+    font-size: var(--primary-font-size);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--green-color);
+    &:hover {
+        background-color: var(--hover-green-color);
+        transition: background-color 0.2s ease;
+    }
+}
+
+.forgotPassword {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 12px 0px;
+
+    > a {
+    display: inline;
+    color: var(--primary);
+    font-size: var(--primary-font-size);
+    margin-left: 4px;
+    &:hover {
+        text-decoration: underline;
+        color: var(--hover-primary-color);
+    }
+}
+}
+
+
+

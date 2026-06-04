@@ -1,0 +1,83 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--lighter-text-color);
+    height: fit-content;
+}
+
+.appear {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 12px;
+
+     > img {
+        width: 90%;
+        border-radius: 6px;
+     }
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.row {
+    display: flex;
+    justify-content: left;
+}
+
+.row > span {
+    font-size: var(--subtitle-font-size);
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--primary);
+
+    &:hover {
+        color: var(--hover-primary-color);
+    }
+}
+
+.video {
+    color: var(--primary-text-color);
+    background-color: var(--yellow-color);
+    padding: 0px 12px;
+    border-radius: 75px;
+    margin-left: 12px;
+    align-self: center;
+    > p {
+        margin: 0;
+        font-weight: bold;
+    }
+}
+
+.ellipsis {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: var(--smaller-font-size);
+    color: var(--lighter-text-color);
+    
+    &:hover {
+        color: var(--lighter-lighter-text-color);
+    }
+}
+
+.hidden {
+    margin: 3px 15px;
+}
+
+.link {
+    cursor: pointer;
+}
