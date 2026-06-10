@@ -48,8 +48,8 @@ function App() {
 
   return (
     <>
-      <Router basename="/embed/daily-dictation">
-            {/* <Router basename="/"> */}
+      {/* <Router basename="/embed/daily-dictation"> */}
+            <Router basename="/">
 
         <div>
           <Routes>
