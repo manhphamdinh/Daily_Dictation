@@ -37,19 +37,14 @@ function App() {
   }, [user, token])
 
   // Đọc basename từ embed-config hoặc tự detect
-  const getBasename = () => {
-    const embedMeta = document.querySelector('meta[name="embed-path"]')
-    if (embedMeta) return embedMeta.getAttribute('content') || '/'
-    // Nếu chạy trong /embed/daily-dictation → dùng làm basename
-    const path = window.location.pathname
-    const match = path.match(/^(\/embed\/[^/]+)/)
-    return match ? match[1] : '/'
-  }
+  const path = window.location.pathname
+  const match = path.match(/^(\/embed\/[^/?]+)/)
+  const basename = match ? match[1] : '/'
+
 
   return (
     <>
-      {/* <Router basename="/embed/daily-dictation"> */}
-            <Router basename="/">
+      <Router basename={basename}>
 
         <div>
           <Routes>
